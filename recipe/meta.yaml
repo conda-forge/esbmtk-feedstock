@@ -30,6 +30,7 @@ requirements:
     - pint
     - psutil
     - pyco2sys
+    - scipy
 
 test:
   imports:
