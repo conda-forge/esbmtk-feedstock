@@ -31,7 +31,6 @@ requirements:
     - psutil
     - pyco2sys
     - scipy
-    - typing
 
 test:
   imports:
