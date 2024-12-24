@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm >=5
     - pip
   run:
-    - python {{ python_min }}
+    - python >= {{ python_min }}
     - importlib-metadata
     - pandas
     - matplotlib-base
