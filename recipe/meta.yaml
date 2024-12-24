@@ -1,5 +1,5 @@
 {% set name = "esbmtk" %}
-{% set version = "0.14.0.6" %}
+{% set version = "0.14.0.11" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/esbmtk-{{ version }}.tar.gz
-  sha256: 31fb304b7d6dae775e013f7e81b8720975835efd53b6fd3de89f333e24e11816
+  sha256: fee129073439f7dad8c0d341951ce39cb568346588753cce9523dcd2cf6c6c05
 
 build:
   noarch: python
