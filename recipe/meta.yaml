@@ -22,16 +22,17 @@ requirements:
     - setuptools-scm >=5
     - pip
   run:
-    - python >= {{ python_min }}
+    - python >={{ python_min }}
     - importlib-metadata
     - pandas
     - matplotlib-base
-    - numpy <2.0
+    - numpy
     - numba
     - pint
     - psutil
-    - pyco2sys
+    - pyco2sys >=1.8.3.3
     - scipy
+    - cachetools
 
 test:
   imports:
