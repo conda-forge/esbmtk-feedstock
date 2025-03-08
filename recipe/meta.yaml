@@ -14,7 +14,7 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-
+[[id:273791a7-a003-4d86-a813-cf6a0b78ee2c][conda forge feedstocks]]
 requirements:
   host:
     - python {{ python_min }}
