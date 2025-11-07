@@ -1,6 +1,6 @@
 {% set name = "esbmtk" %}
-{% set version = "0.14.2.6" %}
-{% set python_min = "3.11" %}
+{% set version = "0.14.2.9" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
