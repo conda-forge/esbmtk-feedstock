@@ -1,4 +1,5 @@
 {% set name = "esbmtk" %}
+{% set python_min = "3.12" %}
 {% set version = GIT_DESCRIBE_TAG | replace("v", "") %}   # tag = v0.14.2.12 → version = 0.14.2.12
 
 package:
@@ -6,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}          # will be filled in by the CI
 
 build:
