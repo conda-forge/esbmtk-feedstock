@@ -1,14 +1,13 @@
 {% set name = "esbmtk" %}
-{% set version = "0.14.2.12" %}
-{% set python_min = "3.12" %}
+{% set version = GIT_DESCRIBE_TAG | replace("v", "") %}   # tag = v0.14.2.12 → version = 0.14.2.12
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/esbmtk-{{ version }}.tar.gz
-  sha256: 499095e4aefcc204aba700f0a724048f1ef29af3cf883f44cf1795dbf9b2a202
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}          # will be filled in by the CI
 
 build:
   noarch: python
